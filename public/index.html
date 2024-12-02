@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Simon Says Shapes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="instructions.html">Instructions</a>
+        <a href="gamePage.html">Game</a>
+    </nav>
+
+    <!-- Centered Content -->
+    <div class="center-content">
+        <!-- Title and Player Input -->
+        <div id="titleAndInput">
+            <h1 class="title">Welcome to Simon Says Shapes</h1>
+            <input type="text" id="playerName" placeholder="Enter your name">
+            <div class="button-container">
+                <button class="save-button" onclick="savePlayerName()">Save Name</button>
+                <!-- Restart Button -->
+                <button class="restart-button" onclick="restartPlayer()">Restart</button>
+            </div>
+
+        </div>
+
+        <!-- Display scoreboard -->
+        <div id="scoreboard">
+            <h2>Scoreboard</h2>
+            <table id="scoreTable">
+                <thead>
+                    <tr>
+                        <th>Player's Name</th>
+                        <th> Score</th>
+                    </tr>
+                </thead>
+                <tbody id="scoreTableBody">
+                    <!-- Rows will be dynamically populated from localStorage -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

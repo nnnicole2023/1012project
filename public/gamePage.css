@@ -1,0 +1,153 @@
+body{
+    background-color: #f9cdad;
+    text-align: center;
+    margin:0;
+    padding:0;
+    } 
+
+.center-text {
+    text-align: center;
+    }
+ /*follow main page setting  */
+
+
+h1{
+    font-family: "Baloo 2", cursive;
+    font-size: 5em; 
+    color: #333; 
+    margin-bottom: 20px;
+    font-weight: 600; 
+    padding-top: 30px;
+}
+
+nav {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    font-family: "Baloo 2", cursive;
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #b17d5f; 
+}
+
+#gameScreen {
+    font-family: "Baloo 2", cursive;
+    position: absolute;
+    top: 18vh; 
+    right: 5vw; 
+    text-align: right;
+    font-size: 130%;
+}
+
+.message {
+    transform: translatey(0px);
+    color: #774f38; /* 字体颜色 */
+    font-weight: bold; /* 加粗 */
+    letter-spacing: 3px; /* 字符间距 */
+    font-size: 30px; /* 字体大小 */
+    text-align: center; /* 居中对齐 */
+    position: relative;
+    white-space: nowrap; /* 防止文本换行 */
+    visibility: visible; /* 默认可见 */
+}
+
+/* 伪元素装饰点 */
+.floating-box::after {
+    content: ""; /* 移除内容点，避免无文字时占位 */
+    display: none; /* 隐藏伪元素 */
+  }
+  
+  /* 动画框无内容时消失 */
+  .floating-box:empty {
+    visibility: hidden; /* 隐藏框 */
+    opacity: 0; /* 淡出 */
+    box-shadow: none; /* 移除阴影 */
+    padding: 0; /* 移除内边距 */
+  }
+
+#startButton {
+    padding: 10px 20px; 
+    font-family: "Baloo 2", cursive;
+    font-size: 200%; 
+    font-weight: bold; /* 加粗 */
+    letter-spacing: 3px; /* 字符间距 */
+    background-color: #ece5ce; /* 背景色 */
+    color: #774f38; /* 字体颜色 */
+    padding: 15px; /* 内边距 */
+    border-radius: 20px; /* 圆角 */
+    box-shadow: 20px 20px #83af9b; /* 阴影 */
+    text-transform: uppercase; /*大写文字*/
+    border: none; 
+    cursor: pointer; 
+    width:15vw;
+    height: 8vh;
+}
+
+.graphs {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    gap: 10vw; 
+    margin-bottom: 15vh;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid #f39c12;
+}
+
+.square {
+    background-color: rgba(28, 141, 30, 0.871);
+    width: 150px;
+    height: 150px;
+}
+
+.circle {
+    background-color: #2980b9;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+.highlight {
+    background-color: white;
+    transition: background-color 0.3s;
+    opacity: 1; /* not transparent */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* shadow */
+}
+
+.timer{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(35, 30, 30);
+    text-align: right;
+    margin-right: 200px;
+}
+/* set a timer in css&html, not js */
+
+
+.bordered {
+    border: 5px solid red; 
+    width: 60%; 
+    margin: 15vh auto; 
+    display: flex; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+
+
+}

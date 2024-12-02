@@ -1,0 +1,47 @@
+Name of Team: Patricia, Avin, Jiaxin 
+Team Members 
+
+1.Patricia Ceban
+   Lecture Section: B
+   Lab Section: 01 
+   Email: Patceban@my.yorku.ca 
+
+Implementation: 
+1. Music on the game and game over page 
+2. Redirecting to game over page after game over
+3. Displaying player username, score, and total time on game over screen
+4. Displaying username on game page 
+5. 'Attempts’ counter in corner of game 
+
+2.Avinsadat Moosavimasouleh
+   Lecture Section: B
+   Lab Section: 03
+   Email: Avin2005@my.yorku.ca
+
+Implementation: 
+1. Homepage 
+2. Scoreboard and username functions 
+3. Displaying score on scoreboard 
+4. Displaying red border for each mistake the player makes while playing the game
+5. Navigation bar 
+
+3.Jiaxin Sun
+   Lecture Section: B
+   Lab Section: 01
+   Email: jiaxins@my.yorku.ca
+
+Implementation: 
+1. Display game shapes
+2. Designing “start” button for game 
+3. Randomized functions for sequences of shapes for the user to repeat
+4. Score counter 
+5. Increasing difficulty as player continues to play game 
+
+Instructions: 
+1. Write “cd “Simon-Says-Shapes”” in terminal 
+2. Type (‘node server.js’) or (‘npm start’) to start the server on http://localhost:3001 (if you are missing an express module write ‘npm install’. If you get a “this address is already in use” error, close and reopen VS code) 
+3. Go to the localhost address shown in terminal and enter the link on browser; this is where the website is running 
+4. Write your name in the homepage. If you want to clear all names, press the “restart” button 
+5. Read instructions on the “instruction” page 
+6. Play the game on the game page 
+7. After you lose on the game page, you will be redirected to the game over page 

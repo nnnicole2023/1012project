@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="En"> 
+    <head>
+         <meta charset="UTF-8"> 
+         <title> Simon Says Shape </title>
+         <link rel="stylesheet" href="style.css">
+         <!--<script src = "Timer_and_Music.js" defer></script>--> 
+         <script src = "gamePage.js" defer></script> <!-- Game script -->
+         <script src="script.js" defer></script> <!-- Username script -->
+
+    </head>
+    
+    <body onload="stopStopWatch()"> 
+        <!-- Nav Bar -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="instructions.html">Instructions</a>
+            <a href="gamePage.html">Game</a>
+        </nav>
+
+        <div class="gameOver"> 
+            <h1> Game Over! </h1><br> 
+            <p> Click anywhere on the page to play music </p>
+            <h2 id="Player_Name"></h2><br> 
+            <div class="Score_Selection">
+                <h2 id="score"> <h2> 
+            </div>
+            <div class="Time_Selection"> 
+                <h2 id="time"></h2> 
+            </div>
+            
+        </div> 
+        <!-- Button to Test Stopwatch Function -->
+         <!-- <div id="stopwatch"> 00:00:00 </div>
+         <button id="stop" onclick="startStopWatch()"> Start </button>
+         <button onclick="stopStopWatch()"> Stop </button>
+         <button onclick="resetStopWatch()"> Reset </button><br><br> -->
+         <!-- Startover Button; Redirects to Game Page on click -->
+        
+        <!-- <button id="start_over" type="button"><a href="gamePage.html">
+            Start Over</a>
+        </button><br><br>  -->
+        <a id="start_over" href="gamePage.html">Start Over</a>
+        <!-- Test Button for Music Implementation
+        <button onclick=play()> Music </button>  -->
+
+        <!-- Acessing recent username, score, and time from gamePage.html-->
+         <script> 
+         const finalTime = sessionStorage.getItem("finalTime"); 
+         if (finalTime) {
+            document.getElementById("time").innerHTML = `Time: ${finalTime}`;
+         } else {
+            document.getElementById("time").innerHTML = 'No time';
+         }
+
+         const scoreFinal = sessionStorage.getItem("scoreFinal"); 
+         if (scoreFinal) { 
+            document.getElementById("score").innerHTML = `${scoreFinal}`; 
+         } else {
+            document.getElementById("score").innerHTML = 'No score'; 
+         }
+
+         const playerName = localStorage.getItem('playerName'); 
+         if(playerName) {
+            document.getElementById("Player_Name").innerHTML = playerName; 
+         } else {
+            document.getElementById("Player_Name").innerHTML = "No username"; 
+         }
+         </script>
+
+
+
+</html>

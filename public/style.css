@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    background-color: #f9cdad;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+
+nav {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    font-family: "Baloo 2", cursive;
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #b17d5f; 
+}
+
+.center-content {
+    text-align: center;
+    width: 100%; 
+    margin-top: 50px;
+    font-family: "Baloo 2", cursive;
+}
+
+
+#titleAndInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+
+#scoreTable {
+    width: 80%; 
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    border: 2px solid #333;
+    font-family: "Baloo 2", cursive;
+}
+
+#scoreTable th, #scoreTable td {
+    font-family: "Baloo 2", cursive;
+    border: 1px solid #333;
+    padding: 8px;
+}
+
+#scoreTable th {
+    background-color: #f2f2f2;
+}
+
+#instruction {
+    font-family: "Baloo 2", cursive;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+}
+
+#instruction1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    width: 60%;
+    margin-left: 21%;
+}
+
+h1.title {
+    font-family: "Baloo 2", cursive;
+    font-size: 5em; 
+    color: #333; 
+    margin-bottom: 20px;
+    font-weight: 600; 
+}
+
+h2 {
+    margin-top: 0px;
+    font-family: "Baloo 2", cursive;
+    font-size: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+.button-container {
+    display: flex; /* 使用 Flexbox 实现水平排列 */
+    justify-content: center; /* 按钮居中 */
+    gap: 10px; /* 按钮之间的间距 */
+    margin-top: 20px; /* 给容器增加一些外边距 */
+  }
+
+/* Restart button style */
+button {
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.save-button{
+    background-color:#789F79;
+}
+.restart-button{
+    background-color:#FF5778
+}
+
+.save-button:hover {
+    background-color: #0c6510;
+}
+
+.restart-button:hover {
+    background-color: #c91c10;
+}
+
+.gameOver{
+    margin-top: 10%;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite; /* 浮动动画 */
+    background-color: #ece5ce; /* 背景色 */
+    color: #774f38; /* 字体颜色 */
+    padding: 15px; /* 内边距 */
+    border-radius: 20px; /* 圆角 */
+    box-shadow: 20px 20px #83af9b; /* 阴影 */
+    text-transform: uppercase; /*大写文字*/
+    font-weight: bold; /* 加粗 */
+    letter-spacing: 3px; /* 字符间距 */
+    text-align: center; /* 居中对齐 */
+    position: relative;
+    width: 30%; /* 固定宽度 */  
+}
+
+/*  */
+.Score_Selection{
+    font-size: 20px;
+}
+/* <div class="Score_Selection">
+<h2> <div id="score">  </div><h2> 
+</div>
+<div class="Time_Selection"> 
+<h2> Time: <div id="time"></div><h2> 
+</div> */
+
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-30px); /* 浮动幅度 */
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+#start_over{
+    display: inline-block;
+    margin-top: 60px;
+    text-decoration: none; /* 去除链接下划线 */
+    background-color: #ece5ce; /* 背景色 */
+    color: #774f38; /* 字体颜色 */
+    padding: 15px 30px; /* 内边距 */
+    border-radius: 20px; /* 圆角 */
+    font-family: "Baloo 2", cursive;
+    font-size: 25px; 
+    font-weight: bold;
+    text-align: center;
+    cursor:pointer;
+}
+
+p{
+    margin-bottom: 50px;
+}

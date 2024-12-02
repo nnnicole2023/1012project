@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is the GAME PAGE -->
+<head>
+    <meta charset="UTF-8">
+    <title>Game - Simon Says Shapes</title>
+    <link rel="stylesheet" href="gamePage.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Include the navigation bar at the top -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="instructions.html">Instructions</a>
+        <a href="gamePage.html">Game</a>
+    </nav>
+
+    <h1>Game Page</h1>
+    <div id="gameScreen">
+        <div id="Player_Name"></div>
+        <div id="score-display">Score:<br> 0</div>
+        <div id="attempts-display">Attempts Left: 3</div>
+        <div id="stopwatch"> 00:00:00 </div>
+        <!-- <button onclick="stopStopWatch()"> Stop </button> --> 
+    </div>
+
+    <div class = "message">
+        <div id="message"></div>
+    </div>
+
+    <div class="graphs">
+        <div class="triangle"></div>
+        <div class="square"></div>
+        <div class="circle"></div>
+    </div>
+
+    <button id="startButton" onclick="startStopWatch(); play()">Start</button> 
+ 
+    <script src="gamePage.js"></script> <!-- Game script -->
+    <script src="script.js"></script> <!-- Homepage script -->
+
+    <script> 
+       const playerName = localStorage.getItem('playerName'); 
+         if(playerName) {
+            document.getElementById("Player_Name").innerHTML = playerName; 
+         } else {
+            document.getElementById("Player_Name").innerHTML = "No username"; 
+         }
+    </script>
+
+    
+</body>
+</html>
