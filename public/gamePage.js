@@ -234,4 +234,4 @@ function updateAttempts() {
 
 //Comment line below to run website//
 //Uncomment line below to run tests (write 'npx vitest' in terminal)// 
-export { check, play, check_location }
+//export { check, play, check_location }
