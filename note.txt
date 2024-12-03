@@ -5,6 +5,7 @@ Team Members
    Lecture Section: B
    Lab Section: 01 
    Email: Patceban@my.yorku.ca 
+   Student ID:
 
 Implementation: 
 1. Music on the game and game over page 
@@ -17,18 +18,26 @@ Implementation:
    Lecture Section: B
    Lab Section: 03
    Email: Avin2005@my.yorku.ca
+   Student ID: 221356464
 
 Implementation: 
 1. Homepage 
 2. Scoreboard and username functions 
 3. Displaying score on scoreboard 
-4. Displaying red border for each mistake the player makes while playing the game
+4. Displaying red border around game page when player have 1 attempt left
 5. Navigation bar 
+
+
+
+
+
+
 
 3.Jiaxin Sun
    Lecture Section: B
    Lab Section: 01
    Email: jiaxins@my.yorku.ca
+   Student ID:
 
 Implementation: 
 1. Display game shapes
