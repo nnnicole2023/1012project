@@ -5,7 +5,7 @@ Team Members
    Lecture Section: B
    Lab Section: 01 
    Email: Patceban@my.yorku.ca 
-   ID:
+   ID: 221373279
 
 Implementation: 
 1. Music on the game and game over page 
@@ -31,7 +31,7 @@ Implementation:
    Lecture Section: B
    Lab Section: 01
    Email: jiaxins@my.yorku.ca
-   ID:
+   ID: 220940359
 
 Implementation: 
 1. Displaying shapes on game page
