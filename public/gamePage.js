@@ -231,3 +231,7 @@ function updateAttempts() {
         document.querySelector('.graphs').classList.remove('bordered'); // Remove border
     }
 }
+
+//Comment line below to run website//
+//Uncomment line below to run tests (write 'npx vitest' in terminal)// 
+//export { check, play, check_location }
