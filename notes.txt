@@ -57,6 +57,7 @@ For testing files:
 2. Write "npx vitest" in terminal to run tests (note: 'npx vitest' updates in real time in terminal; keep this in mind when commenting and uncommenting code)
 3. Recomment export line to continue running website
 4. Tests are written in gamePage.test.js
+5. If the vitest command does not work, write 'npm install jsdom --save-dev' and try writing 'npx vitest' again
 
 Changes: 
 Originally, we planned to put 'best highscore' in the scoreboard, but we changed it to current score because of difficulty and time constraints
