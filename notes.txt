@@ -22,7 +22,7 @@ Implementation:
 1. Homepage 
 2. Scoreboard and username functions 
 3. Displaying score on scoreboard 
-4. Displaying red border for each mistake the player makes while playing the game
+4. Displaying red border around shapes when the player is on their last attempt 
 5. Navigation bar 
 
 3.Jiaxin Sun
@@ -31,17 +31,24 @@ Implementation:
    Email: jiaxins@my.yorku.ca
 
 Implementation: 
-1. Display game shapes
-2. Designing “start” button for game 
+1. Displaying shapes on game page
+2. Start button 
 3. Randomized functions for sequences of shapes for the user to repeat
 4. Score counter 
 5. Increasing difficulty as player continues to play game 
 
 Instructions: 
-1. Write “cd “Simon-Says-Shapes”” in terminal 
-2. Type (‘node server.js’) or (‘npm start’) to start the server on http://localhost:3001 (if you are missing an express module write ‘npm install’. If you get a “this address is already in use” error, close and reopen VS code) 
+1. Write “cd “Simon-Says-Shapes” in terminal 
+2. Type (‘node server.js’) or (‘npm start’) in terminal to start the server on http://localhost:3001 (if you are missing an express module write ‘npm install’. If you get a “this address is already in use” error, close and reopen VS code) 
 3. Go to the localhost address shown in terminal and enter the link on browser; this is where the website is running 
 4. Write your name in the homepage. If you want to clear all names, press the “restart” button 
 5. Read instructions on the “instruction” page 
 6. Play the game on the game page 
 7. After you lose on the game page, you will be redirected to the game over page 
+8. If you are having trouble with the scoreboard try pressing "restart" and trying again
+
+For testing files: 
+1. Uncomment export line found at the end of gamePage.js
+2. Write "npx vitest" in terminal to run tests (note: 'npx vitest' updates in real time in terminal; keep this in mind when commenting and uncommenting code)
+3. Recomment export line to continue running website
+4. Tests are written in gamePage.test.js
