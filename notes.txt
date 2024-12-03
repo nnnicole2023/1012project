@@ -40,6 +40,9 @@ Implementation:
 4. Score counter 
 5. Increasing difficulty as player continues to play game 
 
+Github repository link: 
+https://github.com/nnnicole2023/1012project.git
+
 Instructions: 
 1. Write “cd “Simon-Says-Shapes” in terminal 
 2. Type (‘node server.js’) or (‘npm start’) in terminal to start the server on http://localhost:3001 (if you are missing an express module write ‘npm install’. If you get a “this address is already in use” error, close and reopen VS code) 
@@ -48,10 +51,14 @@ Instructions:
 5. Read instructions on the “instruction” page 
 6. Play the game on the game page 
 7. After you lose on the game page, you will be redirected to the game over page 
-8. If you are having trouble with the scoreboard try pressing "restart" and trying again
+8. If you are having trouble with the scoreboard try pressing "restart" and trying again. The scoreboard does not work on Avin's system when saving the score; we were unable to find the bug
 
 For testing files: 
 1. Uncomment export line found at the end of gamePage.js
 2. Write "npx vitest" in terminal to run tests (note: 'npx vitest' updates in real time in terminal; keep this in mind when commenting and uncommenting code)
 3. Recomment export line to continue running website
 4. Tests are written in gamePage.test.js
+
+Changes: 
+Originally, we planned to put 'best highscore' in the scoreboard, but we changed it to current score because of difficulty and time constraints
+The "game over" popup was changed to redirect to another webpage on lose to save time. The reason why music doesn't play onload of the game over page is due to browser restrictions 

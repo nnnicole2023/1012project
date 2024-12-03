@@ -25,7 +25,7 @@ function savePlayerName() {
         const score = ''; // Placeholder score
         
         const playerName = document.getElementById('playerName').value; //To access username from home page and print it on the game and game over page//
-        addPlayerData(playerName, score);
+        addPlayerData(playerName, score); 
         localStorage.setItem('playerName', playerName);
         localStorage.setItem(playerName, JSON.stringify({ score }));
         document.getElementById('playerName').value = ''; 
